@@ -1,0 +1,112 @@
+hi..........
+2018-05-06T10:47:12.029 | est worker | ClasspathStoryFinder | INFO   - Searching for stories called [berlin-clock.story] in [[D:\java-berlin-clock-master\build\classes\java\test, D:\java-berlin-clock-master\build\resources\test, D:\java-berlin-clock-master\build\classes\java\main]] 
+Õ2018-05-06T10:47:12.041 | est worker | aviouralTestEmbedder | INFO   - Running [BehaviouralTestEmbedder] with spring_stories [[file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story]] 
+!Processing system properties {}
+ÜUsing controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,threads=1]
+
+(BeforeStories)
+
+aRunning story file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story
+Story: The Berlin Clock
+T(file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story)
+Meta:
+@scope interview
+
+Scenario: Midnight
+When the time is 00:00:00
+4typeof ::com.ubs.opsit.interviews.Seconds@7dd13e25
+4typeof ::com.ubs.opsit.interviews.Minutes@1974b9ed
+2typeof ::com.ubs.opsit.interviews.Hours@2965007f
+OOOO    LAMPS CLASS
+timeS--->Y
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO
+ Then the clock should look like
+Y
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO
+
+"Scenario: Middle of the afternoon
+When the time is 13:17:01
+4typeof ::com.ubs.opsit.interviews.Seconds@6c7d67a6
+4typeof ::com.ubs.opsit.interviews.Minutes@390dd8fe
+2typeof ::com.ubs.opsit.interviews.Hours@1b0a3f7f
+OOOO    LAMPS CLASS
+%OOOO    LAMPS FOR LOOP   0   I   13
+ROOO    LAMPS LOOP LAST
+%ROOO    LAMPS FOR LOOP   1   I   13
+RROO    LAMPS LOOP LAST
+timeS--->O
+RROO
+RRRO
+YYROOOOOOOO
+YYOO
+ Then the clock should look like
+O
+RROO
+RRRO
+YYROOOOOOOO
+YYOO
+
+Scenario: Just before midnight
+When the time is 23:59:59
+4typeof ::com.ubs.opsit.interviews.Seconds@48a037e3
+3typeof ::com.ubs.opsit.interviews.Minutes@21b084f
+2typeof ::com.ubs.opsit.interviews.Hours@4cbe4182
+OOOO    LAMPS CLASS
+%OOOO    LAMPS FOR LOOP   0   I   23
+ROOO    LAMPS LOOP LAST
+%ROOO    LAMPS FOR LOOP   1   I   23
+RROO    LAMPS LOOP LAST
+%RROO    LAMPS FOR LOOP   2   I   23
+RRRO    LAMPS LOOP LAST
+%RRRO    LAMPS FOR LOOP   3   I   23
+RRRR    LAMPS LOOP LAST
+timeS--->O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY
+ Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY
+
+Scenario: Midnight
+When the time is 24:00:00
+4typeof ::com.ubs.opsit.interviews.Seconds@2e9105d8
+4typeof ::com.ubs.opsit.interviews.Minutes@109df3d9
+1typeof ::com.ubs.opsit.interviews.Hours@d6c00d6
+OOOO    LAMPS CLASS
+%OOOO    LAMPS FOR LOOP   0   I   24
+ROOO    LAMPS LOOP LAST
+%ROOO    LAMPS FOR LOOP   1   I   24
+RROO    LAMPS LOOP LAST
+%RROO    LAMPS FOR LOOP   2   I   24
+RRRO    LAMPS LOOP LAST
+%RRRO    LAMPS FOR LOOP   3   I   24
+RRRR    LAMPS LOOP LAST
+timeS--->Y
+RRRR
+RRRR
+OOOOOOOOOOO
+OOOO
+ Then the clock should look like
+Y
+RRRR
+RRRR
+OOOOOOOOOOO
+OOOO
+
+
+
+(AfterStories)
+
+¼Generating reports view to 'D:\java-berlin-clock-master\build\classes\java\jbehave' using formats '[stats, html, console]' and view properties '{defaultFormats=stats, decorateNonHtml=true, viewDirectory=view, decorated=ftl/jbehave-report-decorated.ftl, reports=ftl/jbehave-reports-with-totals.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl}'
+hReports view generated with 1 stories (of which 0 pending) containing 4 scenarios (of which 0 pending)
